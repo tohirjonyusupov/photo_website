@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../js/addPhoto.js" defer></script>
+  <title>Log In</title>
+  <style>
+    .msg {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-links">
+        <a href="./myPhotos.html">My photos</a>
+    </div>
+    <div class="user-section">
+        <p class="welcome">Welcome
+          <span id="firstname">JohnDoe</span>
+        </p>
+        <button class="logout-btn" id="logout-btn">Logout</button>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <form class="form">
+      <p class="form-title">Add Photo</p>
+       <div class="input-container">
+         <!-- <input  type="text" > -->
+         <input type="file" id="photo" accept="image/*" placeholder="Image url">
+         <span>
+          <i class="fa-solid fa-link"></i>
+         </span>
+     </div>
+     <div class="msg" id="msg">
+     </div>
+    <button class="submit" id="submit" type="submit">Add</button>
+  </form>
+  </div>
+
+</body>
+</html>
